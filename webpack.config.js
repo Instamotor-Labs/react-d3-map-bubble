@@ -39,7 +39,10 @@ module.exports = [{
   },
 
   resolve: {
-    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx']
+    extensions: ['', '.webpack.js', '.web.js', '.js', '.jsx'],
+    alias: {
+      'react-d3-map-core': '@instamotor-labs/react-d3-map-core'
+    }
   },
 
   plugins: ENV ? [
